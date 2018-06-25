@@ -1,0 +1,13 @@
+{
+  "name": "fullstack-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bronburgundy/fullstack-boilerplate.git",
+  "author": "bronburgundy <bron.cotter@icloud.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "knex": "^0.14.6",
+    "sqlite3": "^4.0.1"
+  }
+}
