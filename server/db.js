@@ -1,6 +1,6 @@
 // Needs knex, knexfile config, db
 
-const knex = require('knex') // Accesses knex a SQL query builder for JS
+const knex = require('knex') // Accesses knex (SQL query builder for JS)
 
 const config = require('../knexfile').development
 

@@ -2,7 +2,7 @@
 
 const express = require('express')
 
-const db = require('../../db')
+const db = require('../db')
 
 const router = express.Router()
 
@@ -91,4 +91,4 @@ router.delete('/:id', (req, res) => {
     })
 })
 
-module.export = router
+module.exports = router
