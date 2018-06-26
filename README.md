@@ -2,7 +2,7 @@
 
 ## Process
 
-# Server + DB
+### Server + DB
 
 1. Create Repo in Github W/ gitignore and license
 2. Clone repo in terminal
@@ -30,7 +30,7 @@
 20. TEST functions 
 
 
-# Client / Browser
+### Client / Browser
 
 1. yarn add react react-dom react-router-dom webpack webpack-cli babel-core babel-loader babel-preset-env babel-preset-react superagent
 2. In client add components folder, index.js file, webpack.config.js
@@ -39,6 +39,5 @@
 5. Run server to make sure working. Fix any errors.
 6. Add code to App.jsx
 7. Make sure public folder is in server, not client
-8. In public folder add index.html
-9. 
+8. In public folder add index.html and add code to it linking to App and bundle
 
