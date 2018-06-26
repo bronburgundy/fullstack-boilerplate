@@ -1,3 +1,5 @@
+// Needs path, express, routes, link from server to express
+
 const path = require('path') // Accesses path module which provides utilities for working with file and directory paths
 
 const express = require('express') // Accesses express framework
