@@ -12,35 +12,30 @@ module.exports = {
   addKick,
   updateKick,
   deleteKick
-
 }
 
-// get all
+// get all Kicks
 function getKicks () {
   return db('kicks')
     .select()
 }
 
-// get one
-function getKick () {
-  return db('kicks')
-    .select()
+// get one Kick
+function getKick (id) {
+  return db('kicks').where('id', id)
 }
 
-// add one
-function addKick () {
-  return db('kicks')
-    .select()
+// add a new kick
+function addKick (newKick) {
+  return db('kicks').insert(newKick)
 }
 
-// update one
-function updateKick () {
-  return db('kicks')
-    .select()
+// update an existing kick
+function updateKick (updatedKick) {
+  return db('kicks').where('id', updatedKick.id).update(updatedKick)
 }
 
-// delete one
-function deleteKick () {
-  return db('kicks')
-    .select()
+// delete a kick
+function deleteKick (id) {
+  return db('kicks').where('id', id).del()
 }

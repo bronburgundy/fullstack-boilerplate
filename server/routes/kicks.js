@@ -35,7 +35,7 @@ router.get('/:id', (req, res) => {
 
 // add one new kick
 router.post('/', (req, res) => {
-  const newkick = {
+  const newKick = {
     brand: req.body.brand,
     model: req.body.model,
     size: req.body.size
@@ -58,15 +58,18 @@ router.post('/', (req, res) => {
 // update existing kick
 router.put('/:id', (req, res) => {
   const updatedKick = {
+    id: Number(req.params.id),
     brand: req.body.brand,
     model: req.body.model,
     size: req.body.size
   }
   db.updateKick(updatedKick)
-    .then(kick => {
-      res.json(kick)
+    .then(() => {
+      db.getKick(updatedKick.id)
+        .then(kick => {
+          res.json(kick)
+        })
     })
-
     .catch(err => {
       // eslint-disable-next-line no-console
       console.error(err)
